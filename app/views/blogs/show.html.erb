@@ -1,0 +1,10 @@
+<h2><%= @blog.title %></h2>
+<br/><br/>
+<h3><%= @blog.content %></h3>
+<br/><br/>
+<br/><br/>
+<%= link_to "Go back!", blogs_path %>
+<br/><br/>
+<%= link_to "delete", @blog, method: :delete %>
+<br/><br/>
+<%= link_to "edit", edit_blog_path(@blog) %>

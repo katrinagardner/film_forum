@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Welcome to forum</title>
+</head>
+<body>
+  <h1>Welcome to my awesome film forum!</h1>
+  <% @blogs.reverse.each do |blog| %>
+  <h2><%= link_to blog.title, blog %></h2>
+  <h3><%= blog.content %></h3>
+
+  <% end %>
+
+  <br/>
+  <br/>
+  <%= link_to "Create a new thing", new_blog_path %>
+
+</body>
+</html>
